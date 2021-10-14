@@ -1,5 +1,5 @@
 import {LitElement, html, customElement, css, property} from 'lit-element';
-import '../section/row/section-row-component'
+import './row-component'
 import {Page} from '../../model/document/page';
 
 @customElement('page-component')
@@ -30,7 +30,7 @@ export class PageComponent extends LitElement {
                 <div class="page" style="${this.getSizeStyle()}">
                     ${this.page == null
                         ? html`empty page`
-                        : this.page.rows.map(row => html`<section-row-component .row="${row}" ></section-row-component>`)}
+                        : this.page.rows.map(row => html`<row-component .row="${row}" ></row-component>`)}
                 </div>
             </div>
         `;

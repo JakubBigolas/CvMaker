@@ -30,7 +30,7 @@ export class AppComponent extends LitElement {
     render() {
         return html`
             <div class="main-container">
-                <document-component document="${document}"></document-component>
+                <document-component .document="${this.document}"></document-component>
             </div>
         `;
     }

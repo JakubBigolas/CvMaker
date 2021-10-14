@@ -2,7 +2,7 @@ import {html, customElement, css, property, LitElement} from 'lit-element';
 import './column-component';
 import {Row} from '../../model/document/row';
 
-@customElement('section-row-component')
+@customElement('row-component')
 export class RowComponent extends LitElement {
 
     @property({type: Row})
