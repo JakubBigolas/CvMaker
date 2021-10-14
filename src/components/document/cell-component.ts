@@ -1,9 +1,8 @@
-import {html, customElement, css, property, TemplateResult} from 'lit-element';
-import {SectionComponent} from '../../../section-component';
-import {Cell} from '../../../../../model/document/cell';
+import {html, customElement, css, property, TemplateResult, LitElement} from 'lit-element';
+import {Cell} from '../../model/document/cell';
 
-@customElement('section-cell-component')
-export class SectionColumnComponent extends LitElement {
+@customElement('cell-component')
+export class CellComponent extends LitElement {
 
     @property({type: Cell})
     cell: Cell | null;

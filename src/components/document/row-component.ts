@@ -1,10 +1,9 @@
-import {html, customElement, css, property} from 'lit-element';
-import {SectionComponent} from '../section-component';
-import './column/section-column-component';
-import {Row} from '../../../model/document/row';
+import {html, customElement, css, property, LitElement} from 'lit-element';
+import './column-component';
+import {Row} from '../../model/document/row';
 
 @customElement('section-row-component')
-export class SectionRowComponent extends LitElement {
+export class RowComponent extends LitElement {
 
     @property({type: Row})
     row: Row | null;
@@ -29,7 +28,7 @@ export class SectionRowComponent extends LitElement {
         }
         return html`
             <div class="section-row">
-                ${this.row.columns.map(column => html`<section-column-component .column="${column}" ></section-column-component>`)}
+                ${this.row.columns.map(column => html`<column-component .column="${column}" ></column-component>`)}
             </div>
         `;
     }

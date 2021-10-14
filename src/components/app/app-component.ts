@@ -1,5 +1,5 @@
 import {LitElement, html, customElement, css, property} from 'lit-element';
-import '../page/page-component'
+import '../document/document-component';
 import {Document} from '../../model/document/document';
 import {CvMock} from '../../service/mock/cv-mock';
 import {DefaultTemplate} from '../../template/default-template';
@@ -30,7 +30,7 @@ export class AppComponent extends LitElement {
     render() {
         return html`
             <div class="main-container">
-                ${this.document.pages.map(page => html`<page-component .page="${page}" ></page-component>`)}
+                <document-component document="${document}"></document-component>
             </div>
         `;
     }
