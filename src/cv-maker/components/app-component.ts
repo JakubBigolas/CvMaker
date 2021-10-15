@@ -1,8 +1,8 @@
 import {LitElement, html, customElement, css, property} from 'lit-element';
-import '../document/document-component';
-import {Document} from '../../model/document/document';
-import {CvMock} from '../../service/mock/cv-mock';
-import {DefaultTemplate} from '../../template/default-template';
+import '../../document/components/document-component';
+import {Document} from '../../document/model/document';
+import {CvMock} from '../../mock/cv-mock';
+import {DefaultTemplate} from '../../template/default//default-template';
 
 @customElement('app-component')
 export class AppComponent extends LitElement {

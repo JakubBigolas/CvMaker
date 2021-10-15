@@ -2,9 +2,8 @@ import {html, TemplateResult} from 'lit-element';
 
 export class CellContent {
 
-    getHtml() : TemplateResult {
+    get html() : TemplateResult {
         return html``;
     }
-
 
 }

@@ -1,5 +1,6 @@
-import {html, customElement, css, property, TemplateResult, LitElement} from 'lit-element';
-import {Cell} from '../../model/document/cell';
+import {html, customElement, css, property, LitElement} from 'lit-element';
+import {Cell} from '../../document/model/cell';
+import './cell-content-component';
 
 @customElement('cell-component')
 export class CellComponent extends LitElement {
@@ -21,14 +22,10 @@ export class CellComponent extends LitElement {
         return html`
             <div class="cell-box" style="${this.getBoxStyle()}">
                 <div class="cell">
-                    ${this.getInnerHtml()}
+                    ${!this.cell ? null : this.cell.cellContent.map(content => html`<cell-content-component .cellContent="${content}"></cell-content-component>`)}
                 </div>
             </div>
         `;
-    }
-
-    private getInnerHtml() : TemplateResult {
-        return this.cell ? this.cell.html : html`empty cell`;
     }
 
     private getBoxStyle() : String {

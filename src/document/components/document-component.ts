@@ -1,5 +1,5 @@
 import {LitElement, html, customElement, css, property} from 'lit-element';
-import {Document} from '../../model/document/document';
+import {Document} from '../../document/model/document';
 import './page-component';
 
 @customElement('document-component')

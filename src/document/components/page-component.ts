@@ -1,6 +1,6 @@
 import {LitElement, html, customElement, css, property} from 'lit-element';
 import './row-component'
-import {Page} from '../../model/document/page';
+import {Page} from '../../document/model/page';
 
 @customElement('page-component')
 export class PageComponent extends LitElement {

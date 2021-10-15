@@ -1,7 +1,7 @@
-import {CV} from '../../model/cv/cv';
-import {PersonalData} from '../../model/cv/personal-data';
-import {SectionData} from '../../model/cv/section-data';
-import {SubsectionData} from '../../model/cv/subsection-data';
+import {CV} from '../cv/model/cv';
+import {PersonalData} from '../cv/model/personal-data';
+import {SectionData} from '../cv/model/section-data';
+import {SubsectionData} from '../cv/model/subsection-data';
 
 
 export class CvMock {

@@ -1,6 +1,6 @@
 import {html, customElement, css, property, LitElement} from 'lit-element';
 import './cell-component'
-import {Column} from '../../model/document/column';
+import {Column} from '../../document/model/column';
 
 @customElement('column-component')
 export class ColumnComponent extends LitElement {

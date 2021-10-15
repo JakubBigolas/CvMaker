@@ -1,6 +1,6 @@
 import {LitElement, html, customElement} from 'lit-element';
 
-import  "./components/app/app-component";
+import  "./cv-maker/components/app-component";
 
 @customElement('main-element')
 export class Main extends LitElement {

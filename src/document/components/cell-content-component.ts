@@ -1,7 +1,11 @@
 import {LitElement, html, customElement, css, property} from 'lit-element';
+import {CellContent} from '../../document/model/cell-content';
 
-@customElement('container-component')
-export class ContainerComponent extends LitElement {
+@customElement('cell-content-component')
+export class CellContentComponent extends LitElement {
+
+    @property({type: CellContent})
+    cellContent: CellContent | null | undefined;
 
     @property({type: Boolean})
     stretch = false;
@@ -36,7 +40,7 @@ export class ContainerComponent extends LitElement {
     render() {
         return html`
             <div class="container ${this.direction} ${this.stretch ? 'stretch' : ''}" style="${this.styles}">
-                <slot></slot>
+                ${this.cellContent ? this.cellContent.html : null}
             </div>
         `;
     }

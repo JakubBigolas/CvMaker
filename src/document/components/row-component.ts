@@ -1,6 +1,6 @@
 import {html, customElement, css, property, LitElement} from 'lit-element';
 import './column-component';
-import {Row} from '../../model/document/row';
+import {Row} from '../../document/model/row';
 
 @customElement('row-component')
 export class RowComponent extends LitElement {
